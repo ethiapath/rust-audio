@@ -10,6 +10,7 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
 extern {
+    let x = 3;
     fn alert(s: &str);
 }
 
