@@ -15,6 +15,14 @@ your plugin code to be compatible with the new, thread-safe plugin API. See the
 [`transfer_and_smooth`](examples/transfer_and_smooth.rs) example for a guide on how
 to port your plugin.
 
+## Dependencies and Installation
+
+1. [Download rust and devtools(cargo, etc)](https://www.rust-lang.org/tools/install)
+2. Open folder in cmd
+3. Run `cargo build --all-targets`
+4. Copy [`target\debug\examples`](target\debug\examples) to your vst folder (see [Packaging on OS X](#Packaging-on-OS-X))
+5. Restart/rescan your DAW and test your new plugin! :)
+
 ## Library Documentation
   - https://rustaudio.github.io/vst-rs/vst/
 
