@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# $1 is the output name
+# $2 is the compiled rust code
+
 # Make sure we have the arguments we need
 if [[ -z $1 || -z $2 ]]; then
     echo "Generates a macOS bundle from a compiled dylib file"
