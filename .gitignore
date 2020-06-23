@@ -19,3 +19,6 @@ Cargo.lock
 Session.vim
 .netrwhist
 *~
+rust-vst/vst-rs-master/**.vst**
+
+.DS_Store
