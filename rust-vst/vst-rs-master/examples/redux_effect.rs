@@ -84,11 +84,12 @@ impl Plugin for ReduxEffect {
             // value to it.
             for (input_sample, output_sample) in input_buffer.iter().zip(output_buffer) {
 
+                // f32(32-bit floating point number)
                 // to do bit reduction we just need to 
                 // multiply the f32 value by a power of 10
                 // Round(floor) the number
-                // Divide the value to convert it back into a float
-                let x = amplitude * 10.0;
+                // Divide the value to convert it back to 0 < x < 1
+                let x = amplitude * 100.0;
                 *output_sample = (*input_sample * x).floor() / x;
             }
         }
